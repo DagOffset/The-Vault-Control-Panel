@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vault - Control Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo-dag.png"> 
+</head>
+<body>
+
+    <div id="login-screen">
+        <div class="login-box">
+            <h3>AUTHORIZED ACCESS ONLY</h3>
+            <input type="text" id="username" placeholder="USERNAME" autocomplete="off">
+            <input type="password" id="password" placeholder="PASSWORD">
+            <button id="btn-login">LOGIN</button>
+            <p id="login-error" class="hidden">ACCESS DENIED</p>
+        </div>
+    </div>
+
+    <div class="monitor" id="main-monitor">
+        <div class="scanner-line"></div>
+        
+        <div id="screen-content">
+            <h3>CENTRAL BANK - NODE: CH-ZUR-01 <span class="blink">|</span></h3>
+            <div id="log-container">
+                <p id="message-log">
+                    > [SYSTEM] STANDBY MODE... READY FOR BOOT.
+                </p>
+            </div>
+            <h2 id="hacker-sig">.teffsO.gaD yb hcaerB</h2>
+        </div>
+
+        <div id="shutdown-overlay">
+            <div class="shutdown-text">SYSTEM OFFLINE</div>
+        </div>
+
+        <div class="control-panel">
+            <button id="btn-start">START SYSTEM</button>
+            <button id="btn-reset" class="hidden">RESET SYSTEM</button>
+            <button id="btn-arresta" class="hidden">SHUTDOWN</button>
+            <button id="btn-attacco" class="btn-hidden hidden">INITIATE BREACH</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
