@@ -98,3 +98,32 @@ button {
 
 @keyframes flicker { 0% { opacity: 0.5; } 100% { opacity: 1; } }
 .blink { animation: flicker 0.8s infinite; }
+
+.credits {
+    text-align: center;
+    padding: 30px 10px;
+    background: rgba(0, 0, 0, 0.4); /* Un leggero stacco dal fondo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #a0a0a0;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(138, 43, 226, 0.2); /* Una linea sottile viola scuro */
+    margin-top: 60px;
+}
+
+.credits strong, .author-name {
+    color: #ffffff; /* Il tuo nome spicca in bianco */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.status .online {
+    color: #00ff41; /* Verde "Matrix" solo per lo status */
+    font-weight: bold;
+}
+
+.warning {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-top: 5px;
+}
